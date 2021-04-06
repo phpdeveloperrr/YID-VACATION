@@ -1,0 +1,125 @@
+.click h1{
+	text-align: center;
+	color: #FC130F;
+	font-size: 25px;
+	margin-top: 10px;
+
+}
+.apartments{
+	background: #6EB0DE;
+
+
+}
+.apartments img{
+	border-radius: 50px;
+	margin-top: 10px;
+	
+}
+.apartments h4{
+	color: #032360;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	margin-top: 7px;
+}
+.page_item{
+	background: #FFFFFF;
+}
+.link_1 label{
+	float: left;
+	margin-top: 7px;
+	margin-right: 15px;
+	color: #1E80CC;
+	margin-left: 33%; 
+}
+.page_item input{
+	background: #5A9BD5;
+	color: #ECF3F8;
+	width: 17% ;
+	margin-top: 10px 5px;
+}
+.page_item2 label{
+	float: left;
+	margin-top: 5px;
+	margin-right: 15px;
+	color: #1E80CC;
+	margin-left: 25%;
+}	
+.page_item2 input{
+	background: #5A9BD5;
+	color: #ECF3F8;
+	width: 17% ;
+	margin-top: 10px 5px;
+}	
+.page_item3 label{
+	float: left;
+	margin-top: 5px;
+	margin-right: 15px;
+	color: #1E80CC;
+	margin-left: 25%;
+}
+.page_item3 input{
+	background: #5A9BD5;
+	color: #ECF3F8;
+	width: 17% ;
+	margin-top: 10px 5px;
+}
+.single_item{
+	background: #FFFFFF;
+	border: solid #5FA5D8;
+	margin-top: 10px;
+}
+.padd_end{
+	padding: 0px;
+}
+.h_1{
+	margin-left: 160px;
+}
+.para {
+	margin-left: 160px;
+}
+.para p{
+	margin-bottom :0px !important;
+}
+.img_icon{
+	font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+.img_icon img{
+    width: 35px;
+    height: 30px;
+}
+.More_btn{
+	justify-content: center;
+    margin-top: 10px;
+
+}
+.More_btn button{
+    margin-top: 5px;
+    font-size: 14px;
+    border: solid #FF7800;
+    color: #ffffff;
+    background: #FF7800;
+}
+.ads_1{
+	margin-top: 10px;
+}
+.ads_2{
+	margin-top: 50px;
+}
+.page_item4{
+	margin: 5vh;
+}
+.page_item4 input{
+	background: #5A9BD5;
+	color: #ECF3F8;
+	width: 17% ;
+	margin-top: 10px 5px;
+}	
+.page_item4 label{
+	float: left;
+	margin-top: 5px;
+	margin-right: 15px;
+	color: #1E80CC;
+	margin-left: 25%;
+}

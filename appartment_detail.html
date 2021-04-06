@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YID VACATION</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css ">
+<link rel="stylesheet" type="text/css" href="css/search_results.css ">
+<link rel="stylesheet" type="text/css" href="css/apartment_details_page.css ">
+<link rel="stylesheet" type="text/css" href="css/apartment_detail.css">
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+</head>
+<body>
+
+<!--Head Start-->
+<div class="topbar row">
+<div class="topbar_logo col-md-2">
+<img src="img/logo.png">
+</div>
+<div class="topbar_section col-md-4">
+<h1>YID VACATION</h1>
+<p>KOSHER VILAS & HOME RENTALS SEARCH ENGINE</p>
+</div>
+
+<div class="link1 col-md-5">
+<?php if($login){?>
+<div class="dropdown">
+<button type="text" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+<?php     echo getFirstName($user_id); ?>
+</button>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="appartment-form.php">Add New Listing</a>
+<a class="dropdown-item" href="inc/logout.php">Logout</a>
+
+</div>
+</div>
+<div class="link">
+<a class="text-light" href="#">List and apartment</a>
+<a class="text-light" href="#">Dashboard</a>
+</div>
+
+<?php }else{?>
+<div class="link">
+<a class=" btn btn-login" href="login.php">Login</a>
+<a class=" btn btn-signup" href="signup.php">Sign up</a>
+</div>
+
+<?php }?>
+</div> <!-- link1 end -->
+</div>
+
+<!--Head end-->
+
+<!--Menu start-->
+
+<nav class="navbar navbar-expand-md">
+<div class="container">
+<a href="" class="navbar-brand text-white font-weight-bold">YID VACATION</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+<span class="navbar-toggler-icon">|||</i></span>
+</button>
+
+<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+<ul class="navbar-nav ml-auto ">
+<li class="nav-item">
+<a href="index.php" class="nav-link text-white font-weight-bold" >HOME</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link text-white font-weight-bold">ABOUT</a>
+</li>
+<li class="nav-item">
+<a href="search_results.php" class="nav-link text-white font-weight-bold">LISTING</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link text-white font-weight-bold">HOSING</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link text-white font-weight-bold">CONTACT</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link text-white font-weight-bold">BLOG</a>
+</li>
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+<!--Menu end-->
+
+<!--Ads start-->
+	<div class="container-fluid white-background ">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="ad1">
+					<p><b>Your Ad Goes Here</b></p>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="ad1">
+					<p><b>Your Ad Goes Here</b></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Ads end-->
+
+<!--body start-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="apart">
+					<div><img src="img/apartment.jpg"></div>
+					<div><img src="img/apartment1.jpg"></div>
+					<div><img src="img/apartment2.jpg"></div>
+					<div><img src="img/apartment3.jpg"></div>
+					<div><img src="img/apartment4.jpg"></div>
+				</div>
+				<div class="apart-slider">
+					<div><img src="img/apartment.jpg"></div>
+					<div><img src="img/apartment1.jpg"></div>
+					<div><img src="img/apartment2.jpg"></div>
+					<div><img src="img/apartment3.jpg"></div>
+					<div><img src="img/apartment4.jpg"></div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="apart-price">
+					<div class="apart-price-content1"><span>4x </span><span class="span1">Reg. Night</span> <span class="span2"><b>($78) </span><span class="span1">$312</b></span></div>
+					<div class="apart-price-content2"><span>2x </span><span class="span1">Weekends</span> <span class="span2"><b>($85) </span><span class="span1">$170</b></span></div>
+					<div class="apart-price-content2"><span>1x </span><span class="span1">Holiday</span> <span class="span2"><b>($95) </span><span class="span1">$95</b></span></div>
+					<div class="apart-price-content2"><span>1x </span><span class="span1">Maintenance Fee</span> <span class="span2"><b>($65) </span><span class="span1">$65</b></span></div>
+					<div class="apart-price-content3"><spna>Total</spna> <span style="color:#0070C0">$642</spna></div>
+					<div class="apart-price-content4"><button class="button" type="button" name="book_now"> BOOK NOW</button></div>
+					<div class="apart-price-content5">Or you can chat & negotiate with the property owner.</div>	
+				</div>
+				<div class="apart-price1">
+					<div class="apart-price-content6"><button class="button1" type="button" name="book_now"> <u>Mr. Anshy Weiss</u> <p>(view profie)</p></button></div>
+					<div class="apart-price-content7"> <span>Phone: </span> <span><b>(00972) 5484 32256</b></span></div>
+					<div class="apart-price-content8"> <span>Phone2: </span> <span><b>(1845) 773 7895</b></span></div>
+					<div class="apart-price-content8"> <span>Email: </span> <span><b>Aweiss3@gmail.com</b></span></div>
+					<div class="apart-price-content8"> <span>Time Zone: </span> <span><b>USA</b></span></div>
+					<div class="apart-price-content9"> <span>Languages: </span> <span><b>English, Yiddish, French</b></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="padding">
+				<div class="apart-detail">
+					<div class="apart-detail-content1">Apartment Name</div>
+					<div class="apart-detail-content2">11 street name, and full address except postal code</div>
+					<div class="apart-detail-content3">Area description.............................................</div>
+					
+					
+					<div class="row">
+						<div class="col-md-4">
+							<div class="padding">
+								<div class="apart-detail1">
+									<div><img src="img/icons/2nd-floor.svg"> <b><span>2nd</span> <span>Floor</span></b> </div>
+									<div><img src="img/icons/sq-meters.svg"> <b><span>168</span> <span>Sq.Meters</span></b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="padding">
+								<div class="apart-detail1">
+									<div><img src="img/icons/bedrooms.svg"> <b><span>3</span> <span>Bedrooms</span></b> </div>
+									<div><img src="img/icons/beds.svg"> <b><span>6</span> <span>Beds</span></b> </div>
+									<div><img src="img/icons/crib.svg"> <b><span>1</span> <span>Crib</span></b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="padding">
+								<div class="apart-detail1">
+									<div><img src="img/icons/full-bathrooms.svg"> <b><span>1</span> <span>Full Bathrooms</span></b> </div>
+									<div><img src="img/icons/toilet.svg"> <b><span>1</span> <span>Toliet</span></b> </div>
+									<div><img src="img/icons/shower.svg"> <b><span>1</span> <span>Shower</span></b> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr style="border-top: 2px solid #0070c142;">
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="padding">
+								<div class="apart-detail1">
+									<div><img src="img/icons/elevator-shabbos.svg"> <b> <span>Elevator / Shabbos Elevator</span></b> </div>
+									<div><img src="img/icons/kosher-kitchen.svg"> <b><span>1Kosher Kitchen68</span></b> </div>
+									<div><img src="img/icons/shabbos-kettle.svg"> <b><span>Shabbos Kettle</span></b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="padding">
+								<div class="apart-detail1">
+									<div><img src="img/icons/parking.svg"> <b><span>Free</span> <span>Parking</span></b> </div>
+									<div><img src="img/icons/hot-plate.svg"> <b><span>6</span> <span>Beds</span></b> </div>
+									<div><img src="img/icons/blech.svg"> <b><span>1</span> <span>Crib</span></b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="padding">
+								<div class="apart-detail1">
+									<div><img src="img/icons/wifi.svg"> <b><span>FREE Wi-Fi</span></b> </div>
+									<div><img src="img/icons/air-conditioner.svg"> <b><span>Central Air - Condition</span></b> </div>
+									<div> <b><span>Great & Up to</span> <span>12 Degrees</span></b> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr style="border-top: 2px solid #0070c142;">
+					
+					
+					<div class="row">
+						<div class="col-md-12">
+							<div class="para padding1">
+								<span>This apartment also has all of the following features & amenities......</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3">
+							<div class="padding">
+								<div class="apart-detail2">
+									<div><img src="img/icons/kitchen.svg"> <b><span>Kitchen</span></b> </div>
+									<div><img src="img/icons/fridge.svg"> <b><span>Fridge</span></b> </div>
+									<div><img src="img/icons/Freezer.svg"> <b><span>Freezer</span> </b> </div>
+									<div><img src="img/icons/microwave.svg"> <b><span>Microwave</span> </b> </div>
+									<div><img src="img/icons/oven.svg"> <b><span>Oven</span></b> </div>
+									<div><img src="img/icons/stove.svg"> <b><span>Stove</span></b> </div>
+									<div><img src="img/icons/Cooking_Utensils.svg"> <b><span>Cooking Utensils</span></b> </div>
+									<div><img src="img/icons/Toaster.svg"> <b><span>Toaster</span> </b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="padding">
+								<div class="apart-detail2">
+									<div><img src="img/icons/coffee-cup.svg"> <b><span></span> <span>Coffee</span></b> </div>
+									<div><img src="img/icons/Tea.svg"> <b><span></span> <span>Tea</span></b> </div>
+									<div><img src="img/icons/Coffee_Machine.svg"> <b><span>Coffee</span> <span>Machine</span></b> </div>
+									<div><img src="img/icons/Drinking_Water.svg"> <b><span>Drinking</span> <span>Water</span></b> </div>
+									<div><img src="img/icons/Linen_Towels.svg"> <b><span>Linen</span> <span>& Towels</span></b> </div>
+									<div><img src="img/icons/Nail_Water _Bowl.svg"> <b><span>Nails</span> <span>Water & Bowl</span></b> </div>
+									<div><img src="img/icons/hot-ironer.svg"> <b><span>Iron</span> <span>/ Board</span></b> </div>
+									<div><img src="img/icons/room-service-signal-for-hotel-doors.svg"> <b><span>(Hotel)</span> <span>Room Service</span></b> </div>
+									<div><img src="img/icons/washing-machine.svg"> <b><span>Wash</span> <span>Machine</span></b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="padding">
+								<div class="apart-detail2">
+									<div><img src="img/icons/Dryer.svg"> <b><span></span> <span>Dryer</span></b> </div>
+									<div><img src="img/icons/Heating.svg"> <b><span></span> <span>Heating</span></b> </div>
+									<div><img src="img/icons/Dining_Room.svg"> <b><span>Dining</span> <span>Room</span></b> </div>
+									<div><img src="img/icons/Sofas.svg"> <b><span></span> <span>Sofas</span></b> </div>
+									<div><img src="img/icons/Landline_Phone.svg"> <b><span>Landline</span> <span>Phone</span></b> </div>
+									<div><img src="img/icons/tv.svg"> <b><span></span> <span>Tv</span></b> </div>
+									<div><img src="img/icons/Shul_In_Building-Project.svg"> <b><span>Shul In</span> <span>Building / Project</span></b> </div>
+									<div><img src="img/icons/Porch.svg"> <b><span></span> <span>Porch</span></b> </div>
+									<div><img src="img/icons/View.svg"> <b><span></span> <span>View</span></b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="padding">
+								<div class="apart-detail2">
+									<div><img src="img/icons/bbq.svg"> <b><span></span> <span>BBQ</span></b> </div>
+									<div><img src="img/icons/swimming-pool.svg"> <b><span></span> <span>Pool</span></b> </div>
+									<div><img src="img/icons/water-tube.svg"> <b><span>Swimming</span> <span>Tube</span></b> </div>
+									<div><img src="img/icons/.svg"> <b><span>Diving</span> <span>Board</span></b> </div>
+									<div><img src="img/icons/Lifeguard_Chair.svg"> <b><span>Lifeguard</span> <span>Chair</span></b> </div>
+									<div><img src="img/icons/2nd-floor.svg"> <b><span>1</span> <span>Crib</span></b> </div>
+									<div><img src="img/icons/2nd-floor.svg"> <b><span>3</span> <span>Bedrooms</span></b> </div>
+									<div><img src="img/icons/2nd-floor.svg"> <b><span>6</span> <span>Beds</span></b> </div>
+									<div><img src="img/icons/2nd-floor.svg"> <b><span>1</span> <span>Crib</span></b> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--Footer start-->
+
+      <div class="row footer">
+      	<div class="container">
+      		<div class="row">
+      	
+		      	<div class="col-md-2 mr-0">
+		      	   <a href="#">SIGN IN</a>
+		      	</div>
+		      	<div class="col-md-2">
+		      		<a href="#">SIGN UP</a>
+		      	</div>
+		      	<div class="col-md-2">
+		      		<a href="#">ABOUT US</a>
+		      	</div>
+		      	<div class="col-md-2">
+		      		<a href="#">CONTACT US</a>
+		      	</div>
+		      	<div class="col-md-2">
+		      		<a href="#">PRIVACY POLICY</a>
+		      	</div>
+		      	<div class="col-md-2">
+		      		<a href="#">TERMS & CONDITIONS</a>
+		      	</div>
+
+      		</div>
+      	</div>
+      </div>
+<div class="endline">
+	<div class="col-md-12 text-center">
+		<p>&copy; yid vacation, 2019</p>
+	</div>    
+</div>
+<!--footer end-->
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	
+		$('.apart').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.apart-slider'
+		});
+
+		$('.apart-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.apart',
+		centerMode: true,
+		focusOnSelect: true
+		});		
+	});
+	
+</script>
+
+
+</body>
+</html>
